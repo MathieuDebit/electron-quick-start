@@ -11,6 +11,11 @@
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
 
+    <div>
+      <button id="resetPositionButton">Reset position</button>
+      <p>Position at reset was: <span id="positionInfo"></span></p>
+    </div>
+
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
