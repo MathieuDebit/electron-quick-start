@@ -11,6 +11,24 @@
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
 
+    <fieldset>
+      <legend>Screens</legend>
+      <em>Open console for more info</em>
+
+      <div id="screensContainer"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Position</legend>
+
+      <label>Position:</label>
+      <input type="number" range="1" id="positionX" value="0">
+      <input type="number" range="1" id="positionY" value="0">
+
+      <button id="resetPositionButton">Reset position</button>
+      <p>Position at reset was: <span id="positionInfo"></span></p>
+    </fieldset>
+
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
